@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MYRIADPROLIGHT';
+    src: url('fonts/MYRIADPROLIGHT.eot');
+    src: url('fonts/MYRIADPROLIGHT.eot') format('embedded-opentype'),
+         url('fonts/MYRIADPROLIGHT.woff2') format('woff2'),
+         url('fonts/MYRIADPROLIGHT.woff') format('woff'),
+         url('fonts/MYRIADPROLIGHT.ttf') format('truetype'),
+         url('fonts/MYRIADPROLIGHT.svg#MYRIADPROLIGHT') format('svg');
+}
