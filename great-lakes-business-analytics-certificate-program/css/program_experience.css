@@ -1,0 +1,16 @@
+.hidden_element {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+.validation_element {
+   border-color: red !important;
+}
+
+.validation_msg {
+  margin-top: -6px;
+  margin-bottom: 8px;
+  text-align: left;
+  padding-left: 12px;
+  color: red;
+}
