@@ -167,7 +167,7 @@ input[type="checkbox"] { border-radius:2px !important; }
 
 .videoRight ul li:last-child { border-right:0px; }
 
-.learnAnalSec { width:100%; float:left; min-height:650px; background:url(../images/learn-bg.jpg) center center no-repeat; background-size:cover; }
+.learnAnalSec { width:100%; float:left; min-height:650px; background:url(https://d9jmtjs5r4cgq.cloudfront.net/bacp-faculty-mentors/learn-bg-min.jpg) center center no-repeat; background-size:cover; }
 .learnAnalTxt { width:60%; float:right; margin-top:70px; text-align:left; }
 .learnAnalTxt h2 { font-size:45px; color:#fff; font-family: 'Montserrat', sans-serif; font-weight:bold; }
 .learnAnalTxt h2 span { font-size:33px; color:#fff; font-family: 'Montserrat', sans-serif; width:100%; font-weight:600; float:left; line-height:75%; }
