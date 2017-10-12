@@ -25,6 +25,15 @@
         }
     </script>
     <script>
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
         function report_page_load() {
             if (location.hostname === 'migrationlti.greatlearning.in') {
                 document.getElementById('program_experience_form').action = 'https://migrationlti.greatlearning.in/program_experience';
@@ -33,6 +42,9 @@
             } else {
                 document.getElementById('program_experience_form').action = 'http://localhost:3001/program_experience';
             }
+            document.getElementById('utm_source').value = getParameterByName('utm_source');
+            document.getElementById('utm_medium').value = getParameterByName('utm_medium');
+            document.getElementById('utm_campaign').value = getParameterByName('utm_campaign');
             mixpanel.track('LTISPV-BACP-LANDING-1');
         }
     </script>
@@ -101,7 +113,9 @@
                 <option value="12-15 Years">12-15 Years</option>
                 <option value=">15 Years">>15 Years</option>
               </select>
-              
+              <input type="hidden" name="utm_source" id="utm_source">
+              <input type="hidden" name="utm_campaign" id="utm_campaign">
+              <input type="hidden" name="utm_medium" id="utm_medium">
               <input type="submit" value="Get Course Access" name="submit">
             </form>
           </div>
